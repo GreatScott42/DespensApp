@@ -6,13 +6,70 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <TableLayout
+        android:layout_width="383dp"
+        android:layout_height="530dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="140dp"
+        android:clipToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_weight="3">
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ellipsize="none"
+                android:text="@string/InventarioButton"
+                android:textSize="24sp"
+                app:cornerRadius="10dp"
+                app:iconTint="#3F51B5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_weight="3">
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ellipsize="none"
+                android:text="@string/aComprarButton"
+                android:textSize="24sp"
+                app:cornerRadius="10dp"
+                app:iconTint="#3F51B5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="299dp"
+            android:layout_height="123dp"
+            android:layout_weight="3">
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:ellipsize="none"
+                android:text="@string/TiendaButton"
+                android:textSize="24sp"
+                app:cornerRadius="10dp"
+                app:iconTint="#3F51B5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

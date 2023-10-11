@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">DespensApp</string>
+    <string name="InventarioButton">Mis cosas</string>
+    <string name="aComprarButton">Por comprar</string>
+    <string name="TiendaButton">Tiendas</string>
 </resources>
