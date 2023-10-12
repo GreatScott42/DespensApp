@@ -27,7 +27,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
                 android:layout_weight="3"
-                android:text="Button"
+                android:text="@string/InventarioButton"
+                android:textSize="34sp"
                 app:cornerRadius="10dp" />
         </TableRow>
 
@@ -41,7 +42,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
                 android:layout_weight="3"
-                android:text="Button"
+                android:text="@string/aComprarButton"
+                android:textSize="34sp"
                 app:cornerRadius="10dp" />
         </TableRow>
 
@@ -55,7 +57,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
                 android:layout_weight="3"
-                android:text="Button"
+                android:text="@string/TiendaButton"
+                android:textSize="34sp"
                 app:cornerRadius="10dp" />
         </TableRow>
 
