@@ -56,7 +56,7 @@ class InventoryActivity : AppCompatActivity() {
             val newPatient = data?.getParcelableExtra<Product>("newProduct")
             if (newPatient != null) {
                 products.add(newPatient)
-                //!!!!!DOLORDECABEZA
+                //!!!!!
                 adapter.notifyDataSetChanged()
             }
         }

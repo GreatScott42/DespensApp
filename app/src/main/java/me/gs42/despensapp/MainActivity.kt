@@ -11,9 +11,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val buttonInventory = findViewById<Button>(R.id.InventoryButton)
+        val buttonacomprar = findViewById<Button>(R.id.ComprarButton)
         buttonInventory.setOnClickListener {
                 val intent = Intent(this, InventoryActivity::class.java)
                 startActivity(intent)
+        }
+        buttonacomprar.setOnClickListener {
+            val intent = Intent(this, AcomprarActivity::class.java)
+            startActivity(intent)
         }
     }
 }

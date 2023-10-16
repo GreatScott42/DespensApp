@@ -34,7 +34,18 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inventario"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="36dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
