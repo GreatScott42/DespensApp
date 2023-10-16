@@ -14,6 +14,6 @@ class MainActivity : AppCompatActivity() {
         buttonInventory.setOnClickListener {
                 val intent = Intent(this, InventoryActivity::class.java)
                 startActivity(intent)
-            }
+        }
     }
 }

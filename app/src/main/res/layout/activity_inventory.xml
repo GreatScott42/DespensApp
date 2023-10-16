@@ -7,14 +7,34 @@
     tools:context=".InventoryActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ListView
             android:id="@+id/listInventory"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="606dp" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/AddproductButton"
+        android:layout_width="178dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/AddproductButton"
+        android:textSize="16sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
