@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductToBuyListActivity">
+
+    <Button
+        android:id="@+id/SaveProductButtonB"
+        android:layout_width="140dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="547dp"
+        android:text="@string/SaveProductButton"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/AmountT"
+        android:layout_width="206dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/CantidadProducto"
+        app:layout_constraintBottom_toTopOf="@+id/PriceT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameT" />
+
+    <EditText
+        android:id="@+id/NameT"
+        android:layout_width="206dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/NombreProducto"
+        app:layout_constraintBottom_toTopOf="@+id/AmountT"
+        app:layout_constraintEnd_toStartOf="@+id/SaveProductButtonB"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PriceT"
+        android:layout_width="212dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="185dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Precio"
+        app:layout_constraintBottom_toTopOf="@+id/StoreT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AmountT" />
+
+    <EditText
+        android:id="@+id/StoreT"
+        android:layout_width="209dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="200dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Tienda"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PriceT" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

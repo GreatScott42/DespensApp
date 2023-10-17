@@ -12,12 +12,17 @@ class MainActivity : AppCompatActivity() {
 
         val buttonInventory = findViewById<Button>(R.id.InventoryButton)
         val buttonacomprar = findViewById<Button>(R.id.ComprarButton)
+        val buttonStores = findViewById<Button>(R.id.TiendasButton)
         buttonInventory.setOnClickListener {
                 val intent = Intent(this, InventoryActivity::class.java)
                 startActivity(intent)
         }
         buttonacomprar.setOnClickListener {
             val intent = Intent(this, AcomprarActivity::class.java)
+            startActivity(intent)
+        }
+        buttonStores.setOnClickListener {
+            val intent = Intent(this, StoresActivity::class.java)
             startActivity(intent)
         }
     }

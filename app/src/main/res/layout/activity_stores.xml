@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InventoryActivity">
+    tools:context=".StoresActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -18,18 +18,18 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ListView
-            android:id="@+id/listInventory"
+            android:id="@+id/listStores"
             android:layout_width="match_parent"
             android:layout_height="606dp" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/AddproductButton"
+        android:id="@+id/AddstoreButton"
         android:layout_width="178dp"
         android:layout_height="75dp"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="27dp"
-        android:text="@string/AddproductButton"
+        android:text="Añadir Tienda"
         android:textSize="16sp"
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -40,17 +40,17 @@
         app:layout_constraintVertical_bias="0.333" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/Stores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="43dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="46dp"
+        android:layout_marginEnd="67dp"
         android:layout_marginBottom="32dp"
-        android:text="Inventario"
+        android:text="Tiendas"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toStartOf="@+id/AddproductButton"
+        app:layout_constraintEnd_toStartOf="@+id/AddstoreButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
