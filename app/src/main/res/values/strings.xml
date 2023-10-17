@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">DespensApp</string>
+    <string name="InventarioButton">Mis cosas</string>
+    <string name="aComprarButton">Por comprar</string>
+    <string name="TiendaButton">Tiendas</string>
+
+    <string name="NombreProducto">Nombre</string>
+    <string name="CantidadProducto">Cantidad</string>
+
+    <string name="SaveProductButton">Guardar</string>
+    <string name="AddproductButton">Añadir producto</string>
 </resources>

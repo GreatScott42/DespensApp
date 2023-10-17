@@ -13,6 +13,33 @@
         android:theme="@style/Theme.DespensApp"
         tools:targetApi="31">
         <activity
+            android:name=".AddStoretoStoresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddProductToBuyListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AcomprarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddProductToInventoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InventoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PresentationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
