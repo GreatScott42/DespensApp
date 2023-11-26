@@ -37,32 +37,12 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="0">
-
-            <Button
-                android:id="@+id/ComprarButton"
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_weight="3"
-                android:text="@string/aComprarButton"
-                android:textSize="34sp"
-                app:cornerRadius="10dp" />
-        </TableRow>
+            android:layout_weight="0"/>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="0">
-
-            <Button
-                android:id="@+id/TiendasButton"
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:layout_weight="3"
-                android:text="@string/TiendaButton"
-                android:textSize="34sp"
-                app:cornerRadius="10dp" />
-        </TableRow>
+            android:layout_weight="0"/>
 
         <TableRow
             android:layout_width="match_parent"
@@ -91,9 +71,11 @@
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Titulo"
-        app:srcCompat="@mipmap/ic_launcher_foreground"
-        tools:layout_editor_absoluteY="2dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
 </androidx.constraintlayout.widget.ConstraintLayout>
