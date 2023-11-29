@@ -15,6 +15,9 @@ APK en releases del repositorio
 # Diagrama de clases
 ![Diagrama de clases](https://i.imgur.com/g09WH0K.png)
 # Link al video expositorio
-https://youtu.be/zfX2GTl_vrk
+Video 1: https://youtu.be/zfX2GTl_vrk
+Video 2: https://youtu.be/zMuMWRvm3Gs
+
+
 
 
