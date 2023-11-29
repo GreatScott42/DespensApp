@@ -11,7 +11,7 @@ DespensApp es una app que te ayuda con tu inventario de comida y lo que hay que 
 # Requerimientos no funcionales
 - guardado de informacion
 # APK
-https://drive.google.com/file/d/1018n5k7ZACKFMc_vAEMZDxME-dRcJp9C/view?usp=sharing
+APK en releases del repositorio
 # Diagrama de clases
 ![Diagrama de clases](https://i.imgur.com/g09WH0K.png)
 # Link al video expositorio
