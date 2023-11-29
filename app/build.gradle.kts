@@ -2,7 +2,9 @@ plugins {
     id("com.android.application")
     id("com.google.devtools.ksp")
     id("org.jetbrains.kotlin.android")
-    kotlin("kapt")
+    id("kotlin-parcelize")
+    //id("org.jetbrains.kotlin.kapt")
+    id("org.jetbrains.kotlin.kapt")
 
 }
 
@@ -48,19 +50,13 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-
-}
-dependencies {
-    implementation("com.google.firebase:firebase-firestore-ktx:24.9.1")
-    val room_version = "2.6.0"
+    val room_version = "2.5.0"
 
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
 
     // To use Kotlin annotation processing tool (kapt)
-    //kapt("androidx.room:room-compiler:$room_version")
-    // To use Kotlin Symbol Processing (KSP)
-    ksp("androidx.room:room-compiler:$room_version")
+    kapt("androidx.room:room-compiler:$room_version")
 
     // optional - Kotlin Extensions and Coroutines support for Room
     implementation("androidx.room:room-ktx:$room_version")

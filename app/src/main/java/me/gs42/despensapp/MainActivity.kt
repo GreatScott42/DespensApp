@@ -15,7 +15,7 @@ import androidx.room.Insert
 import androidx.room.PrimaryKey
 import androidx.room.Query
 import androidx.room.RoomDatabase
-import com.google.firebase.firestore.auth.User
+
 
 class MainActivity : AppCompatActivity() {
 
