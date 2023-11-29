@@ -17,19 +17,20 @@ import androidx.room.PrimaryKey
 import androidx.room.Query
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.google.firebase.firestore.auth.User
+
 
 class InventoryActivity : AppCompatActivity() {
 
     private lateinit var listInventory: ListView
     private lateinit var products: MutableList<Product>
     private lateinit var adapter : ArrayAdapter<Product>
-
+    private lateinit var db: DataBase
 
     companion object {
         const val REQUEST_REGISTER = 1 // You can use any unique code
         const val REQUEST_EDITER = 2 // You can use any unique code
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inventory)
@@ -58,16 +59,19 @@ class InventoryActivity : AppCompatActivity() {
             startActivityForResult(intentj, REQUEST_REGISTER)
         }
 
+        val nProduct = Producto(1, "soda",1)
 
-        val db = Room.databaseBuilder(
+        db = Room.databaseBuilder(
             applicationContext,
             DataBase::class.java, "database"
-        ).build()
+        ).allowMainThreadQueries().build()
 
         val ProdDao = db.productoDao()
+        //ProdDao.insertAll(nProduct)
         val users: List<Producto> = ProdDao.getAll()
         for (prod: Producto in users){
             Log.d("PROD", prod.nombre.toString())
+            products.add(Product(prod.nombre, prod.precio!!))
         }
 
 
@@ -79,6 +83,11 @@ class InventoryActivity : AppCompatActivity() {
             val newPatient = data?.getParcelableExtra<Product>("newProduct")
             if (newPatient != null) {
                 products.add(newPatient)
+
+                val ProdDao = db.productoDao()
+                val produ = Producto(ProdDao.getAll().size.toInt()+1,newPatient.name,newPatient.cantidad)
+                ProdDao.insertAll(produ)
+
                 //!!!!!
                 adapter.notifyDataSetChanged()
             }

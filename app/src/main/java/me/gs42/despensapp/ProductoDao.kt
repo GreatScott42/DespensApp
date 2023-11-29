@@ -18,7 +18,7 @@ interface ProductoDao {
     fun findByName(first: String, last: String): Producto
 
     @Insert
-    fun insertAll(vararg users: Producto)
+    fun insertAll(vararg productos: Producto)
 
     @Delete
     fun delete(user: Producto)
