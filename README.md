@@ -7,6 +7,7 @@ DespensApp es una app que te ayuda con tu inventario de comida y lo que hay que 
 - listar objetos a comprar
 - mostrar lugares de interes
 - recordatorios
+- Otras cosas
 - poder asignar precios y presupuestos
 # Requerimientos no funcionales
 - guardado de informacion
